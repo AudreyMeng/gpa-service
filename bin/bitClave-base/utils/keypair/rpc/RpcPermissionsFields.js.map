@@ -1,0 +1,1 @@
+{"version":3,"file":"RpcPermissionsFields.js","sourceRoot":"","sources":["../../../../../src/bitClave-base/utils/keypair/rpc/RpcPermissionsFields.ts"],"names":[],"mappings":";;AAAA,yCAAsC;AAGtC,0BAA0C,SAAQ,mBAAQ;IAKtD,YAAY,WAAmB,EAAE,SAAiB,EAAE,IAA8B;QAC9E,KAAK,CAAC,WAAW,CAAC,CAAC;QACnB,IAAI,CAAC,SAAS,GAAG,SAAS,CAAC;QAC3B,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;IACrB,CAAC;CAEJ;AAXD,uCAWC"}

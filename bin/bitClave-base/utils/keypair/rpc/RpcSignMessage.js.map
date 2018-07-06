@@ -1,0 +1,1 @@
+{"version":3,"file":"RpcSignMessage.js","sourceRoot":"","sources":["../../../../../src/bitClave-base/utils/keypair/rpc/RpcSignMessage.ts"],"names":[],"mappings":";;AAAA,yCAAsC;AAEtC,oBAAoC,SAAQ,mBAAQ;IAIhD,YAAY,OAAe,EAAE,WAAmB;QAC5C,KAAK,CAAC,WAAW,CAAC,CAAC;QACnB,IAAI,CAAC,OAAO,GAAG,OAAO,CAAC;IAC3B,CAAC;CAEJ;AATD,iCASC"}
