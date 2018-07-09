@@ -8,6 +8,15 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "run like heroku",
+            "program": "${workspaceFolder}/bin/app.js",
+            "env": {
+                "NODE_PATH":"${workspaceFolder}/externalLibs"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "preLaunchTask": "typescript",
             "sourceMaps": true,
             "name": "Mocha Tests",
@@ -22,7 +31,10 @@
             ],
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
-            "protocol": "inspector"
+            "protocol": "inspector",
+            "env": {
+                "NODE_PATH":"${workspaceFolder}/externalLibs"
+            }
         },
         {
             "type": "node",
@@ -32,7 +44,11 @@
             "program": "${workspaceFolder}/src/app.ts",
             "cwd": "${workspaceFolder}",
             "protocol": "inspector",
-            "outFiles": [ "${workspaceFolder}/bin/**/*.js"]
-        }
+            "outFiles": [ "${workspaceFolder}/bin/**/*.js"],
+            "env": {
+                "NODE_PATH":"${workspaceFolder}/externalLibs"
+            }
+        },
+
     ]
 }

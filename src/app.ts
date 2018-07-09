@@ -1,16 +1,12 @@
+process.env.NODE_CONFIG_DIR = __dirname + '/../src/config/';
 
 import { Runner } from './runner'
 import { WealthValidator } from './wealthValidator'
 
-const interval = 1000 * 40;
 const worker = new WealthValidator();
-const runner = new Runner(interval, worker);
+const runner = new Runner(worker);
 
-runner.once();
-
+// runner.once();
 runner.start();
 
-// setTimeout(()=>{
-//     console.log('stop');
-//     runner.stop();
-// }, 5000);
+

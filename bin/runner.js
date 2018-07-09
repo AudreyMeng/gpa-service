@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const config = require('config');
 class Runner {
-    constructor(delay, worker) {
-        this.delay = delay;
+    constructor(worker) {
+        this.delay = config.interval;
         this.worker = worker;
     }
     start() {

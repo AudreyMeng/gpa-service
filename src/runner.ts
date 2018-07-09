@@ -1,10 +1,13 @@
 import { WealthValidator } from './wealthValidator'
+
+const config = require('config');
+
 export class Runner {
     delay: Number;
     timer: any;
     worker: WealthValidator;
-    constructor(delay: number, worker: WealthValidator){
-        this.delay = delay;
+    constructor(worker: WealthValidator){
+        this.delay = config.interval;
         this.worker = worker;
     }
     public start(){
