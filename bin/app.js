@@ -1,6 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 process.env.NODE_CONFIG_DIR = __dirname + '/../src/config/';
+const express = require('express');
+express().listen(process.env.PORT || 3000);
+;
 const runner_1 = require("./runner");
 const wealthValidator_1 = require("./wealthValidator");
 const worker = new wealthValidator_1.WealthValidator();
