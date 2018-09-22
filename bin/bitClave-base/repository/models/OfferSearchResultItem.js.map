@@ -1,1 +1,0 @@
-{"version":3,"file":"OfferSearchResultItem.js","sourceRoot":"","sources":["../../../../src/bitClave-base/repository/models/OfferSearchResultItem.ts"],"names":[],"mappings":";;;;;AAAA,gEAAwC;AACxC,oDAA4B;AAE5B;IAKI,YAAY,cAA2B,IAAI,qBAAW,EAAE,EAAE,QAAe,IAAI,eAAK,EAAE;QAChF,IAAI,CAAC,WAAW,GAAG,WAAW,CAAC;QAC/B,IAAI,CAAC,KAAK,GAAG,KAAK,CAAC;IACvB,CAAC;CAEJ;AAVD,wCAUC"}
