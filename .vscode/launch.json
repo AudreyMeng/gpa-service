@@ -47,7 +47,8 @@
             "protocol": "inspector",
             "outFiles": [ "${workspaceFolder}/bin/**/*.js"],
             "env": {
-                "NODE_PATH":"${workspaceFolder}/externalLibs"
+                "NODE_PATH":"${workspaceFolder}/externalLibs",
+                "NODE_ENV": "local"
             }
         },
 

@@ -15,7 +15,6 @@ export class WealthValidator {
     private web3 = new Web3(new Web3.providers.HttpProvider(config.api.web3));
     base: Base;
     constructor(){
-        // this.base = new Base('https://base2-bitclva-com.herokuapp.com', 'localhost');
         this.base = new Base(config.api.base, config.siteOrigin);
 
         this.tokenAddreesesToSymbols = new Map();

@@ -21,7 +21,6 @@ class WealthValidator {
         this.cryptoCompareMinAPI = config.api.cryptocompare;
         this.tokenContracts = new Map();
         this.web3 = new web3_1.default(new web3_1.default.providers.HttpProvider(config.api.web3));
-        // this.base = new Base('https://base2-bitclva-com.herokuapp.com', 'localhost');
         this.base = new bitclave_base_1.default(config.api.base, config.siteOrigin);
         this.tokenAddreesesToSymbols = new Map();
         config.tokens.forEach((e) => this.tokenAddreesesToSymbols.set(e.name, new token_1.default(e.addr, e.num)));
