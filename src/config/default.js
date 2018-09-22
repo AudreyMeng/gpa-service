@@ -5,10 +5,10 @@ module.exports = {
     api: {
         cryptocompare : 'https://min-api.cryptocompare.com/data/pricemulti?tsyms=ETH&fsyms=',
         web3: 'https://mainnet.infura.io/',
-        base: 'https://base-node-staging.herokuapp.com/',
+        base: 'http://localhost:8080/',
         ethereum: 'https://mainnet.infura.io/'
     },
-    pass: 'habit ticket uphold favorite rival hole smooth upset stool ahead clog lady',
+    pass: 'crawl kingdom belt say scout shuffle dice radar reject convince dizzy hello',
     unique: 'unique message for sig',
     tokens: [
         { name: 'EOS', addr: '0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0', num: 18},

@@ -11,7 +11,8 @@
             "name": "run like heroku",
             "program": "${workspaceFolder}/bin/app.js",
             "env": {
-                "NODE_PATH":"${workspaceFolder}/externalLibs"
+                "NODE_PATH":"${workspaceFolder}/externalLibs",
+                "PORT": "3003"
             }
         },
         {

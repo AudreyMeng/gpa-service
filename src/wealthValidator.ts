@@ -102,7 +102,8 @@ export class WealthValidator {
         addresses: Array<string>,
         tokenContracts: Map<string, any>,
         tokenAddreesesToSymbols: Map<string, Token>,
-        tokenRates: Map<string, any>) {
+        tokenRates: Map<string, any>
+    ){
 
         let valuesOnAddress: Map<string, any> = new Map();
         let wealth: any = new BigNumber(0);
