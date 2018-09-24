@@ -15,6 +15,7 @@
     "@types/chai": "^4.1.4",
     "@types/mocha": "^5.2.4",
     "@types/node": "^10.5.1",
+    "@types/underscore": "^1.8.9",
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
     "ts-mockito": "^2.3.0",

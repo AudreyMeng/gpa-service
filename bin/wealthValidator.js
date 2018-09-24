@@ -97,7 +97,11 @@ class WealthValidator {
         let valueResult;
         for (let [key, contract] of tokenContracts.entries()) {
             try {
-                decimals = prepareDec.pow(tokens.get(key).decimals);
+                const keyPrepareToDecimal = tokens.get(key);
+                if (!keyPrepareToDecimal) {
+                    throw new Error('key in token is undefined');
+                }
+                decimals = prepareDec.pow(keyPrepareToDecimal.decimals);
                 value = await contract.methods.balanceOf(address).call();
                 valueResult = new bignumber_js_1.BigNumber(value).div(decimals);
                 result.set(key, valueResult);
@@ -108,7 +112,7 @@ class WealthValidator {
         }
         try {
             const weiBalance = await this.web3.eth.getBalance(address);
-            const ethBalance = this.web3.utils.fromWei(weiBalance);
+            const ethBalance = this.web3.utils.fromWei(weiBalance, 'ether');
             value = new bignumber_js_1.BigNumber(ethBalance);
             result.set('ETH', value);
         }
