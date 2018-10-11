@@ -4,7 +4,7 @@
   "description": "",
   "main": "bin/app.js",
   "scripts": {
-    "postinstall": "./fix_bn_js_types.sh && node ./utils/remove-bitcore-lib-dep.js && node utils/del.js TEMP-base-client-js node_modules/bitclave-base node_modules/@types/bitclave-base && git clone --branch master --depth 1 https://github.com/bitclave/base-client-js.git TEMP-base-client-js && node utils/copy.js TEMP-base-client-js/example/public/base-lib/bitclave-base node_modules/bitclave-base/ && node utils/copy.js TEMP-base-client-js/example/public/base-lib/@types/bitclave-base node_modules/@types/bitclave-base/ && node utils/del.js TEMP-base-client-js",
+    "postinstall": "./fix_bn_js_types.sh && node ./utils/remove-bitcore-lib-dep.js && node utils/del.js TEMP-base-client-js node_modules/bitclave-base node_modules/@types/bitclave-base && git clone --branch master --depth 1 https://github.com/bitclave/base-client-js.git TEMP-base-client-js && node utils/copy.js TEMP-base-client-js/example/public/base-lib/bitclave-base node_modules/bitclave-base/ && node utils/copy.js TEMP-base-client-js/example/public/base-lib/@types/bitclave-base node_modules/@types/bitclave-base/ && node utils/del.js TEMP-base-client-js && tsc",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node bin/app.js"
@@ -37,6 +37,7 @@
     "request": "^2.87.0",
     "request-promise-native": "^1.0.5",
     "rxjs": "^5.5.10",
+    "typedarray-to-buffer": "^3.1.5",
     "typescript": "^2.9.2",
     "web3": "^1.0.0-beta.34",
     "xmlhttprequest": "^1.8.0"
