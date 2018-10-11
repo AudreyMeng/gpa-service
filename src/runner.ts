@@ -3,7 +3,7 @@ import { WealthValidator } from './wealthValidator'
 const config = require('config');
 
 export class Runner {
-    delay: Number;
+    delay: number;
     timer: any;
     worker: WealthValidator;
     constructor(worker: WealthValidator){
