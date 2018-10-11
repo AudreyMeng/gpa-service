@@ -40,6 +40,7 @@
     "typedarray-to-buffer": "^3.1.5",
     "typescript": "^2.9.2",
     "web3": "^1.0.0-beta.34",
-    "xmlhttprequest": "^1.8.0"
+    "xmlhttprequest": "^1.8.0",
+    "yaeti": "^1.0.2"
   }
 }
