@@ -1,20 +1,20 @@
 import { should } from 'chai';
 import { mock, instance, verify } from 'ts-mockito';
 import { Runner } from './../runner';
-import { WealthValidator } from './../wealthValidator';
+import { GPAService } from './../GPAService';
 
 should();
 
 describe('Runner', function() {
     it('should run Wealth Validator method "workingCycle"', () => {
-        const mockedWealthValidator: WealthValidator = mock(WealthValidator);
-        const worker: WealthValidator = instance(mockedWealthValidator);
+        const mockedGPAService: GPAService = mock(GPAService);
+        const worker: GPAService = instance(mockedGPAService);
         const runner = new Runner(1000, worker);
         runner.start();
 
         setInterval(()=>{
             runner.stop();
-            verify(mockedWealthValidator.workingCycle()).times(4);
+            verify(mockedGPAService.workingCycle()).times(4);
         }, 5000);
 
 

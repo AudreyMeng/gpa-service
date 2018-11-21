@@ -1,12 +1,12 @@
 process.env.NODE_CONFIG_DIR = __dirname + '/../src/config/';
 
 const express = require('express');
-express().listen(process.env.PORT || 3000);;
+express().listen(process.env.PORT || 3001);
 
 import { Runner } from './runner'
-import { WealthValidator } from './wealthValidator'
+import { GPAService } from './GPAService'
 
-const worker = new WealthValidator();
+const worker = new GPAService();
 const runner = new Runner(worker);
 
 // runner.once();
